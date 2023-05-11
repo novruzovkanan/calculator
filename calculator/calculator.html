@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <div class="container">
+    <div class="calculator">
+        <form>
+            <div>
+                <input type="text" name="display" class="output">
+            </div>
+            <div>
+                <input type="button" value="AC" class="button white-grey" onclick="display.value='' " >
+                <input type="button" value="Del" class="button white-grey" onclick="display.value= display.value.toString().slice(0, -1)">
+                <input type="button" value="%" class="button white-grey" onclick="display.value +='/100'">
+                <input type="button" value="/" class="button orange" onclick="display.value +='/'">
+            </div>
+            <div>
+                <input type="button" value="7" class="button grey" onclick="display.value +='7'" >
+                <input type="button" value="8" class="button grey" onclick="display.value +='8'">
+                <input type="button" value="9" class="button grey" onclick="display.value +='9'">
+                <input type="button" value="x" class="button orange" onclick="display.value +='*'">
+            </div>
+            <div>
+                <input type="button" value="4" class="button grey" onclick="display.value +='4'">
+                <input type="button" value="5" class="button grey" onclick="display.value +='5'">
+                <input type="button" value="6" class="button grey" onclick="display.value +='6'">
+                <input type="button" value="-" class="button orange" onclick="display.value +='-'">
+            </div>
+            <div>
+                <input type="button" value="1" class="button grey" onclick="display.value +='1'">
+                <input type="button" value="2" class="button grey" onclick="display.value +='2'">
+                <input type="button" value="3" class="button grey" onclick="display.value +='3'">
+                <input type="button" value="+" class="button orange" onclick="display.value +='+'">
+            </div>
+            <div>
+                <input type="button" value="0" class=" zero button grey" onclick="display.value +='0'">
+                <input type="button" value="," class="button grey" onclick="display.value +='.'">
+                <input type="button" value="=" class="button orange" onclick="display.value= eval(display.value)">
+                
+            </div>
+        </form>
+    </div>
+ </div>
+ <script src="calculator.html"></script>
+</body>
+</html>
